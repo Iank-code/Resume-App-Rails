@@ -69,3 +69,169 @@ Migrating to DeviseCreateUsers (20230726202613)
   [1m[36mTRANSACTION (15.1ms)[0m  [1m[36mcommit transaction[0m
   [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
   [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2023-07-26 23:34:27 +0300
+  
+NoMethodError (undefined method `devise_for' for #<ActionDispatch::Routing::Mapper:0x00007f70c90eed90>):
+  
+config/routes.rb:2:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/" for ::1 at 2023-07-26 23:34:28 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+Started GET "/" for ::1 at 2023-07-26 23:34:28 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+Started GET "/" for ::1 at 2023-07-26 23:34:29 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+Started GET "/" for ::1 at 2023-07-26 23:34:29 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+Started GET "/users/sign_in" for ::1 at 2023-07-26 23:37:28 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_in"):
+  
+Started GET "/users/sign_in" for ::1 at 2023-07-26 23:37:33 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_in"):
+  
+Started GET "/users/sign_in" for ::1 at 2023-07-26 23:37:35 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_in"):
+  
+Started GET "/users/sign_in" for ::1 at 2023-07-26 23:37:36 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_in"):
+  
+Started GET "/rails/info/routes?path=u" for ::1 at 2023-07-26 23:38:19 +0300
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"u"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 412)
+
+
+Started GET "/rails/info/routes?path=user" for ::1 at 2023-07-26 23:38:20 +0300
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"user"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 214)
+
+
+Started GET "/rails/info/routes?path=user" for ::1 at 2023-07-26 23:38:22 +0300
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"user"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 212)
+
+
+Started GET "/rails/info/routes?path=/user" for ::1 at 2023-07-26 23:38:22 +0300
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"/user"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 215)
+
+
+Started GET "/rails/info/routes?path=/user" for ::1 at 2023-07-26 23:38:23 +0300
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"/user"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 213)
+
+
+Started GET "/rails/info/routes?path=/users" for ::1 at 2023-07-26 23:38:24 +0300
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"/users"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 215)
+
+
+Started GET "/rails/info/routes?path=/users" for ::1 at 2023-07-26 23:38:25 +0300
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"/users"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 212)
+
+
+Started GET "/rails/info/routes?path=/users/" for ::1 at 2023-07-26 23:38:27 +0300
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"/users/"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 215)
+
+
+Started GET "/rails/info/routes?path=/users/sign" for ::1 at 2023-07-26 23:38:30 +0300
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"/users/sign"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 215)
+
+
+Started GET "/rails/info/routes?path=/users/sign" for ::1 at 2023-07-26 23:38:31 +0300
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"/users/sign"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 212)
+
+
+Started GET "/rails/info/routes?path=/users/sign_i" for ::1 at 2023-07-26 23:38:32 +0300
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"/users/sign_i"}
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 215)
+
+
+Started GET "/rails/info/routes?path=/users/sign_in" for ::1 at 2023-07-26 23:38:33 +0300
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"/users/sign_in"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 215)
+
+
+Started GET "/sign_in" for ::1 at 2023-07-26 23:40:03 +0300
+  
+NoMethodError (undefined method `devise_for' for #<ActionDispatch::Routing::Mapper:0x00007f70c981b5a0>):
+  
+config/routes.rb:2:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/sign_in" for ::1 at 2023-07-26 23:40:04 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/sign_in"):
+  
+Started GET "/sign_in" for ::1 at 2023-07-26 23:40:05 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/sign_in"):
+  
+Started GET "/sign_in" for ::1 at 2023-07-26 23:40:05 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/sign_in"):
+  
+Started GET "/sign_in" for ::1 at 2023-07-26 23:40:06 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/sign_in"):
+  
+Started GET "/user/sign_in" for ::1 at 2023-07-26 23:41:00 +0300
+  
+NoMethodError (undefined method `devise_for' for #<ActionDispatch::Routing::Mapper:0x00007f70ccc3a0c0>):
+  
+config/routes.rb:2:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/user/sign_in" for ::1 at 2023-07-26 23:41:01 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/user/sign_in"):
+  
+Started GET "/user/sign_in" for ::1 at 2023-07-26 23:44:13 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/user/sign_in"):
+  
+Started GET "/user/sign_in" for ::1 at 2023-07-26 23:44:13 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/user/sign_in"):
+  
+Started GET "/user/sign_in" for ::1 at 2023-07-26 23:44:14 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/user/sign_in"):
+  
+Started GET "/users/sign_in" for ::1 at 2023-07-26 23:44:19 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 6.4ms | Allocations: 916)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 31.6ms | Allocations: 4928)
+  Rendered layout layouts/application.html.erb (Duration: 584.2ms | Allocations: 144909)
+Completed 200 OK in 666ms (Views: 589.1ms | ActiveRecord: 0.8ms | Allocations: 166285)
+
+
